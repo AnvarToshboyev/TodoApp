@@ -15,12 +15,12 @@ function TodoCard({ todo, index, setTodos, todos, id, checked }) {
     <div className="">
       <div
         key={index}
-        className="w-[670px] flex justify-between items-center rounded-[10px] space-y-[50px]  bg-blue-900 py-4 px-4 border border-blue-900 shadow-2xl shadow-slate-900"
+        className=" w-[300px] md:w-[670px] flex justify-between items-center rounded-[10px]  bg-blue-900 py-4 px-4 border border-blue-900 shadow-2xl shadow-slate-900"
       >
         <h3 className="text-xl text-white font-semibold">
           {index + 1}.{todo}
         </h3>
-        <div className="flex  items-center space-x-[40px]">
+        <div className="flex  items-center space-x-[20px] lg:space-x-[40px]">
           <input
             checked={checked}
             onChange={checkTaskHundler}
