@@ -14,6 +14,7 @@ function TodoCard({ todo, index, setTodos, todos, id, checked }) {
   return (
     <div className="">
       <div
+        style={{ backgroundColor: checked ? "#0c4a6e" : "#1e40af" }}
         key={index}
         className=" w-[300px] md:w-[670px] flex justify-between items-center rounded-[10px]  bg-blue-900 py-4 px-4 border border-blue-900 shadow-2xl shadow-slate-900"
       >

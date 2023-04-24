@@ -19,7 +19,7 @@ function TodoApp() {
           Todos
         </h1>
         <TodosForm setTodos={setTodos} />
-        <div className="">
+        <div className="flex flex-col space-y-5">
           {todos.map((item, index) => (
             <TodoCard
               index={index}
